@@ -12,7 +12,7 @@ const DownloadIcon = () => (
 
 // NEW Chevron Icon for our custom dropdown
 const ChevronDownIcon = () => (
-  <svg className="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7"></path></svg>
+  <svg className="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7"></path></svg>
 );
 
 
@@ -82,9 +82,9 @@ const TextToSpeechTab = () => {
         />
         <div className="mt-4 flex flex-wrap gap-2">
           {/* Speaker buttons... */}
-          <button className="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full hover:bg-gray-300">Samara</button>
-          <button className="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full hover:bg-gray-300">Spuds</button>
-          <button className="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full hover:bg-gray-300">Jessica</button>
+          <button className="text-xs bg-gray-100 text-pink-700 px-3 py-1 rounded-full hover:bg-gray-300">Samara</button>
+          <button className="text-xs bg-gray-100 text-pink-700 px-3 py-1 rounded-full hover:bg-gray-300">Spuds</button>
+          <button className="text-xs bg-gray-100 text-pink-700 px-3 py-1 rounded-full hover:bg-gray-300">Jessica</button>
         </div>
         <div className="mt-4 flex flex-wrap items-center justify-between gap-4">
 
@@ -92,7 +92,7 @@ const TextToSpeechTab = () => {
           <div className="relative" ref={dropdownRef}>
             <button
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-              className="flex items-center justify-between w-36 bg-gray-100 border border-gray-200 rounded-md py-2 px-5 text-sm font-medium text-gray-700 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
+              className="flex items-center justify-between w-36 bg-gray-100 border border-gray-200 rounded-md py-2 px-5 text-sm font-medium text-slate-700 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
             >
               <span>{selectedLanguage}</span>
               <ChevronDownIcon />

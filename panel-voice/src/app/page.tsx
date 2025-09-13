@@ -151,7 +151,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-gray-50 text-gray-800 font-sans">
       <header className="py-6 px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto flex justify-between items-center">
-          <div className="text-2xl font-bold tracking-tighter">PanelVoices</div>
+          <div className="text-2xl font-bold tracking-tighter">PANEL-VOICES</div>
           <nav className="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-600">
             <a href="#" className="hover:text-black">Creative Platform</a>
             <a href="#" className="hover:text-black">Agents Platform</a>

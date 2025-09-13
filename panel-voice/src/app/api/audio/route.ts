@@ -24,25 +24,33 @@ export async function GET(request: Request) {
     const { searchParams } = new URL(request.url);
     const lang = searchParams.get('lang');
 
+    console.log('API called with language:', lang);
+
     if (!lang) {
         return NextResponse.json({ error: 'Language parameter is missing' }, { status: 400 });
     }
 
     try {
         const client = await clientPromise;
+        console.log('Connected to MongoDB successfully');
+
+
         const db = client.db("elevenlabsDB");
         const collection = db.collection<AudioData>('audioFiles');
 
-        // First, let's seed the data if collection is empty
+
         const count = await collection.countDocuments();
+        console.log('Current document count:', count);
+
         if (count === 0) {
             console.log('Collection is empty, inserting initial data...');
-            await collection.insertMany(initialAudioData);
-            console.log('Initial data inserted successfully');
+            const result = await collection.insertMany(initialAudioData);
+            console.log('Initial data inserted successfully:', result);
         }
 
-        // Find the audio file for the requested language
+        // audio file for the requested language
         let audioFile: WithId<AudioData> | null = await collection.findOne({ language: lang.toLowerCase() });
+        console.log('Found audio file:', audioFile);
 
         if (audioFile) {
             return NextResponse.json({ url: audioFile.url });

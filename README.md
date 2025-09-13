@@ -7,7 +7,8 @@ A Next.js application that replicates the ElevenLabs Text-to-Speech interface wi
 **Live Application**: [https://panelvoice-interntask.vercel.app/](https://panelvoice-interntask.vercel.app/)
 
 ## 📸 Screenshots:
-<img width="1588" height="844" alt="image" src="https://github.com/user-attachments/assets/ee250ab0-4aea-46b7-8fd5-d057d18ff54a" />
+
+<img width="1071" height="703" alt="image" src="https://github.com/user-attachments/assets/2517ac67-af2b-42d9-84b4-a10135e995e0" />
 
 <img width="1266" height="840" alt="image" src="https://github.com/user-attachments/assets/dbd4167b-784a-46a1-9550-7dc1ed6d064b" />
 

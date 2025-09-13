@@ -8,7 +8,7 @@ A Next.js application that replicates the ElevenLabs Text-to-Speech interface wi
 
 ## 📸 Screenshots:
 
-<img width="1071" height="703" alt="image" src="https://github.com/user-attachments/assets/2517ac67-af2b-42d9-84b4-a10135e995e0" />
+<img width="1041" height="724" alt="image" src="https://github.com/user-attachments/assets/b095ac7b-1a66-4f9b-b54b-2e4e13513379" />
 
 <img width="1266" height="840" alt="image" src="https://github.com/user-attachments/assets/dbd4167b-784a-46a1-9550-7dc1ed6d064b" />
 

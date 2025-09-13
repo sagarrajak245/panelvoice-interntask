@@ -49,7 +49,7 @@ export async function GET(request: Request) {
         }
 
         // audio file for the requested language
-        let audioFile: WithId<AudioData> | null = await collection.findOne({ language: lang.toLowerCase() });
+        const audioFile: WithId<AudioData> | null = await collection.findOne({ language: lang.toLowerCase() });
         console.log('Found audio file:', audioFile);
 
         if (audioFile) {
